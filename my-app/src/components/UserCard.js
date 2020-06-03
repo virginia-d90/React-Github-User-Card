@@ -8,10 +8,11 @@ class UserCard extends React.Component {
     render(){
         return(
             <div className='user-card'>
-                <img src={this.props.userData.avatar_url}/>
+                <img src={this.props.userData.avatar_url} alt='github profile'/>
                 <h2>{this.props.userData.name}</h2>
                 <p>{this.props.userData.login}</p>
                 <p>Bio:{this.props.userData.bio}</p>
+                <p>Location:{this.props.userData.location}</p>
                 <p>Followers:{this.props.userData.followers}</p>
                 <p>Following:{this.props.userData.following}</p>
             </div>
